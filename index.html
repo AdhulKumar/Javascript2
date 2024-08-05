@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index and Uppercase</title>
+</head>
+<body>
+    <script>
+        // Arrow function to process the string
+        const processString = (str) => {
+            return str.split('').map((char, index) => `${index}${char.toUpperCase()}`).join('');
+        };
+
+        // Prompt the user for a string
+        const userInput = prompt("Enter a string:");
+
+        // Process the input string
+        const result = processString(userInput);
+
+        // Display the result in the browser window
+        document.body.innerHTML = `<h1>${result}</h1>`;
+    </script>
+</body>
+</html>
